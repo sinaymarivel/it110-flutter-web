@@ -1,7 +1,7 @@
-# IT 110 Flutter 
+# IT 110 Flutter Web Project
 
 ## Project Description
-This project is a Flutter Web application developed for the IT 110 subject.It contains a Home Page and a Login Page.
+This project is a Flutter Web application developed for the IT 110 subject. It includes a Home Page and a Login Page with basic client-side navigation.
 
 ## Features
 - Home Page
@@ -16,30 +16,33 @@ This project is a Flutter Web application developed for the IT 110 subject.It co
 - Git and GitHub
 
 ## Project Structure
-- `lib/` — Main application code
-- `web/` — Web-specific files
-- `test/` — Test files
-- `pubspec.yaml` — Project dependencies and configuration
+- `lib/` — Contains the main application code.
+- `lib/screens/` — Contains the Home and Login pages.
+- `lib/models/` — Stores data models.
+- `lib/routes/` — Organizes page navigation.
+- `lib/services/` — Reserved for application services.
+- `lib/widgets/` — Stores reusable interface components.
+- `web/` — Contains web-specific files.
+- `test/` — Contains test files.
+- `pubspec.yaml` — Defines project dependencies and configuration.
 
 ## How to Run
-1. Open the project folder in VS Code.
-2. Open the terminal.
-3. Run `flutter pub get`.
-4. Run `flutter run -d chrome`.
+1. Open the project folder in Visual Studio Code.
+2. Open the terminal in the project directory.
+3. Install the dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+4. Run the application in Google Chrome:
+
+   ```bash
+   flutter run -d chrome
+   ```
 
 ## Project Status
-The Home Page and Login Page are running successfully in Chrome.
+The Home Page and Login Page are running successfully in Chrome. The project structure and navigation will be developed further as the project progresses.
 
 ## GitHub Repository
-Add the repository URL after uploading the project to GitHub. https://github.com/sinaymarivel/it110-flutter-web.git
-
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[https://github.com/sinaymarivel/it110-flutter-web](https://github.com/sinaymarivel/it110-flutter-web)
