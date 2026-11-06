@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import '../widgets/app_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -114,6 +115,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 32),
+
                   Wrap(
                     spacing: 14,
                     runSpacing: 14,
@@ -144,9 +146,7 @@ class HomeScreen extends StatelessWidget {
                         onPressed: () {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
-                              content: Text(
-                                'Focus.Flow.Finish',
-                              ),
+                              content: Text('Focus.Flow.Finish'),
                             ),
                           );
                         },
@@ -166,7 +166,23 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+
+                  const SizedBox(height: 18),
+
+                  // Reusable button for the Activity 9 Report Form.
+                  SizedBox(
+                    width: 220,
+                    child: AppButton(
+                      text: 'CREATE REPORT',
+                      icon: Icons.assignment_outlined,
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/report');
+                      },
+                    ),
+                  ),
+
                   const SizedBox(height: 48),
+
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(24),
